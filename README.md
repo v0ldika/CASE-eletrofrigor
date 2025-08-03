@@ -18,6 +18,7 @@ Carregamento de Dados (ELT): Conecta-se a um banco de dados MySQL (case_eletrofr
 
 A consolidação final dos dados em uma única tabela será realizada diretamente no SQL, otimizando o processamento para um grande volume de informações.
 ###################
+
 Tecnologias Utilizadas
 Python: Linguagem principal do projeto.
 
@@ -29,6 +30,7 @@ mysql-connector-python: Driver para conexão com MySQL.
 
 MySQL: Sistema de gerenciamento de banco de dados relacional.
 ###################
+
 Como Executar o Projeto
 Para rodar este script localmente, siga os passos abaixo:
 
