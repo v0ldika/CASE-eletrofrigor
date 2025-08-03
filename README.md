@@ -1,4 +1,5 @@
 Projeto de Análise de Dados: EletroFrigor
+
 Este projeto tem como objetivo principal unificar e analisar dados de vendas de três empresas (Empresa A, Empresa B e Empresa C), consolidando-os em um banco de dados MySQL para facilitar análises futuras.
 
 Visão Geral do Projeto
@@ -22,6 +23,7 @@ A consolidação final dos dados em uma única tabela será realizada diretament
 ###################
 
 Tecnologias Utilizadas
+
 Python: Linguagem principal do projeto.
 
 pandas: Biblioteca utilizada para manipulação e tratamento de dados.
@@ -40,6 +42,7 @@ Para rodar este script localmente, siga os passos abaixo:
 Bash
 
 pip install pandas sqlalchemy mysql-connector-python
+
 Configuração do Banco de Dados:
 
 Criei um banco de dados chamado case_eletrofrigor no seu servidor MySQL.
