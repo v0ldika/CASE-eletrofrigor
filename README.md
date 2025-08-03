@@ -17,7 +17,29 @@ Verifica a quantidade de valores nulos ou zero na coluna Valor de cada DataFrame
 Carregamento de Dados (ELT): Conecta-se a um banco de dados MySQL (case_eletrofrigor) e insere os dados de cada empresa em suas respectivas tabelas (vendas_empresa_a, vendas_empresa_b, vendas_empresa_c).
 
 A consolidação final dos dados em uma única tabela será realizada diretamente no SQL, otimizando o processamento para um grande volume de informações.
+
 ###################
+
+A query no Mysql:
+
+
+CREATE TABLE vendas_totais AS
+
+SELECT * FROM vendas_empresa_a
+
+UNION ALL
+
+SELECT * FROM vendas_empresa_b
+
+UNION ALL
+
+SELECT * FROM vendas_empresa_c;
+
+
+
+
+########################
+
 
 Tecnologias Utilizadas
 Python: Linguagem principal do projeto.
@@ -29,6 +51,7 @@ SQLAlchemy: Toolkit de SQL para interagir com o banco de dados.
 mysql-connector-python: Driver para conexão com MySQL.
 
 MySQL: Sistema de gerenciamento de banco de dados relacional.
+
 ###################
 
 Como Executar o Projeto
