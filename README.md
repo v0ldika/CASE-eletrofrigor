@@ -18,28 +18,8 @@ Carregamento de Dados (ELT): Conecta-se a um banco de dados MySQL (case_eletrofr
 
 A consolidação final dos dados em uma única tabela será realizada diretamente no SQL, otimizando o processamento para um grande volume de informações.
 
+
 ###################
-
-A query no Mysql:
-
-
-CREATE TABLE vendas_totais AS
-
-SELECT * FROM vendas_empresa_a
-
-UNION ALL
-
-SELECT * FROM vendas_empresa_b
-
-UNION ALL
-
-SELECT * FROM vendas_empresa_c;
-
-
-
-
-########################
-
 
 Tecnologias Utilizadas
 Python: Linguagem principal do projeto.
@@ -64,6 +44,7 @@ Configuração do Banco de Dados:
 
 Criei um banco de dados chamado case_eletrofrigor no seu servidor MySQL.
 
+
 No script Python, ajuste as variáveis de conexão com o banco de dados (user, password, host, database) para corresponder às suas credenciais.
 
 Estrutura de Arquivos:
@@ -75,6 +56,29 @@ Execute o script:
 Bash
 
 python main.py
+
+###################
+
+A query no Mysql:
+
+
+CREATE TABLE vendas_totais AS
+
+SELECT * FROM vendas_empresa_a
+
+UNION ALL
+
+SELECT * FROM vendas_empresa_b
+
+UNION ALL
+
+SELECT * FROM vendas_empresa_c;
+
+
+
+
+########################
+
 
 
 Contribuição
